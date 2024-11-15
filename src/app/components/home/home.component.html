@@ -1,0 +1,12 @@
+<div class="cubos-container">
+    <h1>Bienvenido</h1>
+    <hr />
+    <br />
+    <div class="cub-card" *ngFor="let cub of cubos" [attr.key]="cub.nombre">
+      <img [src]="cub.imagen" alt="Imagen del cubo" />
+      <h3>{{ cub.nombre }}</h3>
+      <p>{{ cub.precio }}</p>
+      <button class="btn btn-info" [routerLink]="['/detail', cub.idCubo]">Detalle</button>
+    </div>
+  </div>
+  

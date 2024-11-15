@@ -1,0 +1,24 @@
+<!-- detalle-cubo.component.html -->
+<div class="detail-container">
+    <h1>Detalle del Cubo</h1>
+    <div class="cub-card">
+      <img [src]="cubo.imagen" alt="Imagen del cubo" />
+      <table>
+        <thead>
+          <tr>
+            <th>Marca y Modelo</th>
+            <th>Valoración</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ cubo.marca }} {{ cubo.modelo }}</td>
+            <td>{{ cubo.valoracion }}</td>
+            <td>{{ cubo.precio }}€</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn btn-info" routerLink="/">VOLVER</button>
+  </div>
+  
